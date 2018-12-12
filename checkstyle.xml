@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.2//EN"
+"http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
+
+<module name="Checker">
+
+    <property name="charset" value="UTF-8" />
+
+	<module name="Header">
+		<property name="headerFile" value="java.header"/>
+		<property name="fileExtensions" value="java"/>
+	</module>
+
+	<module name="FileLength">
+		<property name="max" value="1500"/>
+	</module>
+
+	<module name="FileTabCharacter">
+		<property name="eachLine" value="false"/>
+	</module>
+        
+	<module name="TreeWalker">
+
+		<module name="BooleanExpressionComplexity" />
+
+		<module name="CyclomaticComplexity" />
+
+		<module name="LineLength">
+			<property name="max" value="150"/>
+		</module>
+
+		<module name="MethodLength">
+			<property name="tokens" value="METHOD_DEF"/>
+			<property name="max" value="100"/>
+		</module>
+		
+		<module name="EmptyCatchBlock">
+			<property name="exceptionVariableName" value="expected|ignore"/>
+		</module>
+				
+		<module name="AvoidStarImport">
+			<property name="excludes" value="java.io"/>
+			<property name="allowClassImports" value="true"/>
+			<property name="allowStaticMemberImports" value="true"/>
+		</module>
+
+		<module name="IllegalImport"/>
+
+		<module name="NeedBraces">
+  			<property name="allowSingleLineStatement" value="true"/>
+		</module>
+
+	</module>
+
+</module>
