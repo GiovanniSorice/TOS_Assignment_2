@@ -40,12 +40,6 @@
 							<goal>checkstyle</goal>
 						</goals>
 					</execution>
-		        <execution>
-		          <id>default-prepare-agent</id>
-		          <goals>
-		            <goal>prepare-agent</goal>
-		          </goals>
-		        </execution>
 				</executions>
             </plugin>
             <plugin>
@@ -60,6 +54,13 @@
                         <goal>report</goal>
                       </goals>
                     </execution>
+                 <execution>
+		          <id>default-prepare-agent</id>
+		          <goals>
+		            <goal>prepare-agent</goal>
+		          </goals>
+		        </execution>
+                    
                 </executions>
             </plugin>
             <plugin>
