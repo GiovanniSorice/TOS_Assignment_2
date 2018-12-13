@@ -11,4 +11,5 @@ private static final long serialVersionUID = 1L;
 public RestaurantBillException(String message) {
 super(message);
 }
+
 }
